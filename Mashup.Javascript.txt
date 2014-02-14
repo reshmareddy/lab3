@@ -1,0 +1,22 @@
+function initialize() {
+    var mapOptions = {
+        zoom:10,
+        center: new google.maps.LatLng(40.693134, -74.031028)
+        
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    var panoramioLayer = new google.maps.panoramio.PanoramioLayer();
+  panoramioLayer.setMap(map);
+
+  var tag = document.getElementById('tag');
+  var button = document.getElementById('filter-button');
+
+  google.maps.event.addDomListener(button, 'click', function() {
+    panoramioLayer.setTag(tag.value);
+  });
+
+  map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(
+      document.getElementById('filter'));
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);

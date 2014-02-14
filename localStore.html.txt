@@ -1,0 +1,67 @@
+<!--<title>CS5551 Lab Assignment - 2 </title>
+<div id="weather"></div>-->
+<div data-role = "page" id = "pg">
+    <div data-role ="header">
+        <h1>Weather Report and Directions</h1>
+    </div>
+    
+  
+
+<div data-role="content">
+        <p><a href="#weather1" data-role="button">Weather at the current location</a></p>
+        <p><a href="#page1" data-role="button"> Page transition</a></p>
+    </div>
+</div>
+
+  <div data-role="page" id="page1">
+      <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Page2</h1>
+     </div>
+    
+<input type="text" placeholder="something to store" id="inputString" />
+<h1 onclick="clearStorage()">clear storage</h1>
+<h1 onclick="saveStatusLocally()">store</h1>
+<h1 onclick="readStatus()">print</h1>
+<div id="write"></div>
+ <p><a href="#ButtonEventPage" data-role="button"> Page transition</a></p>
+<div id="write2"></div>
+
+</div>
+</div>
+<div data-role="page" id="ButtonEventPage">
+     <div data-role="header">
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Page2</h1>
+     </div>
+    
+    <h1 onclick="clearStorage2()">clear storage</h1>
+<h1 onclick="readStatus2()">print</h1>
+    
+         
+  
+</div>
+    
+</div>
+            
+<div data-role="page" id="weather1">
+
+     <div align="center" data-role="header">
+
+     	  <a data-rel="back" data-icon="home">Home</a>
+          <h1>Weather</h1>
+    </div>
+    
+         <div id="weather"></div>
+    <div id="tweet">
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+      
+<a class="tweet-link" href="https://twitter.com/intent/tweet?button_hashtag=
+Weather" class="twitter-hastag-button" data-lang="en">Tweet Weather</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    </div>
+
+
+															
+														
